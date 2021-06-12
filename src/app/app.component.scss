@@ -5,7 +5,7 @@
 
 
 .wrapper {
-    @include wrap(970px, 400px, 1px solid #9c611e, auto, 160px, auto);
+    @include wrap(970px, 400px, 1px solid #9c611e, auto, 0px, auto);
 }
 
 .background-div img {
@@ -18,40 +18,45 @@
 }
 
 .logo-div img {
-    @include component(54px, 284px, -88px, 341px);
+    @include component(54px, 284px, -88px, 180px);
 }
 
 .player2 img {
-    @include component(201px, 311px, 150px, 348px);
+    @include component(201px, 311px, 150px, 190px);
 }
 
 .nemesis-icon img {
-    @include component(88px, 321px, -53px, 188px);
+    @include component(88px, 321px, -53px, 20px);
 }
 
 .player2-legend {
-    @include component(114px, 321px, 466px, 452px);
+    @include component(114px, 321px, 466px, 275px);
     @include font(adihausdin_cn, '', 000000, 1);
 }
 
 .first-title {
-    @include component(120px, 402px, 120px, 204px);
+    @include component(120px, 402px, 120px, 30px);
     @include font(adineuepro, 37px, $color-title, 28px);
 }
 
 .first-desc {
-    @include component(93px, 359px, 188px, 204px);
+    @include component(93px, 359px, 188px, 30px);
     @include font(adihausdin_cn, 10px, $color-subtitle, px);
 }
 
 .guayo img {
-    @include component(201px, 278px, 325px, 201px);
+    @include component(201px, 278px, 325px, 35px);
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 2s infinite  alternate;
 }
 
+.linea1 img {
+    @include component(89px, 278px, 439px, 135px);
+}
+
+
 .second-paragraph {
-    @include component(139px, 420px, 610px, 204px);
+    @include component(139px, 420px, 610px, 35px);
 }
 
 .subtitle {
@@ -63,16 +68,16 @@
 }
 
 .guayos-2 img {
-    @include component(170px, 122px, 781px, 204px);
+    @include component(170px, 122px, 781px, 35px);
     @include jumpElement();
 }
 
 .player-2 img {
-    @include component(190px, 121px, 681px, 367px);
+    @include component(190px, 121px, 681px, 200px);
 }
 
 .final-title {
-    @include component(175px, 105px, 932px, 308px);
+    @include component(175px, 105px, 932px, 170px);
     @include font(adineuepro, 18px, $color-final, px);
 }
 
@@ -80,3 +85,32 @@
 .filter-orange {
     filter: invert(48%) sepia(79%) saturate(2476%) brightness(118%) contrast(119%);
 }
+
+  #slideshow img {  
+    animation: slide 2s infinite;
+  }
+  #slideshow img:nth-child(2) {
+    animation-delay: -1.25s;
+  }
+  #slideshow img:nth-child(3) {
+    animation-delay: -1.5s;
+  }
+
+  @keyframes slide {
+    25% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    90% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    95% {
+      transform: translateX(200px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    }
