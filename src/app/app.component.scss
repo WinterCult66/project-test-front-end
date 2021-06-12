@@ -5,6 +5,16 @@
     src: url("/assets/fonts/adihausdin/adihausdin.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "adihausdin_cn";
+    src: url("/assets/fonts/adihausdin/adihausdin_cn.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "adineuepro";
+    src: url("/assets/fonts/adineuepro/adineueprocond_bold.otf") format("truetype");
+}
+
 .wrapper {
     height: 800px;
     width: 400px;
@@ -83,29 +93,65 @@
         top: -53px;
         left: 188px;
     }
-    fill: #4CAF50;
-    
-    
+
     position: absolute;
     background-repeat: no-repeat;
 
 }
 
-.filter-green{
+.filter-orange{
     filter: invert(48%) sepia(79%) saturate(2476%) brightness(118%) contrast(119%);
 }
 
-.first-text {
+.first-title {
+    z-index: 2;
+    content: "";
+    color: #db8f59;
+    @include small {
+        width: 120px;
+        height: 402px;
+        top: 120px;
+        left: 204px;
+        font-size: 37px;
+        line-height: 28px;
+    }
+
+    position: absolute;
+    background-repeat: no-repeat;
+    font-family: adineuepro;
+
+}
+
+.first-desc {
+    z-index: 2;
+    content: "";
+    color: #404040;
+    @include small {
+        width: 93px;
+        height: 359px;
+        top: 188px;
+        left: 204px;
+        font-size: 10px;
+    }
+
+    position: absolute;
+    background-repeat: no-repeat;
+    font-family: adihausdin_cn;
+}
+
+.guayo img{  
+    
     z-index: 1;
     content: "";
     @include small {
         width: 201px;
-        height: 311px;
-        top: 102px;
-        left: 191px; 
+        height: 278px;
+        top: 355px;
+        left: 201px;  
     }
-    font-family: adihausdin;
-
+    position: absolute;
+    background-repeat: no-repeat;
+ 
 }
 
 
