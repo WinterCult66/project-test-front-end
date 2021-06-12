@@ -1,28 +1,17 @@
 @import "screen-size";
+@import "fonts";
+@import "_colors";
 
-@font-face {
-    font-family: "adihausdin";
-    src: url("/assets/fonts/adihausdin/adihausdin.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "adihausdin_cn";
-    src: url("/assets/fonts/adihausdin/adihausdin_cn.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "adineuepro";
-    src: url("/assets/fonts/adineuepro/adineueprocond_bold.otf") format("truetype");
-}
 
 .wrapper {
-    height: 800px;
+    height: 970px;
     width: 400px;
-    border: 1px solid #4CAF50;
+    border: 1px solid #9c611e;
     margin: auto;
     margin-left: 160px;
     margin-right: auto;
 }
+
 .background-div img{    
 
     z-index: -2;
@@ -31,25 +20,6 @@
         height: 580px;        
     }
     
-    // z-index: -2;
-    // content: "";
-    // width: 100%;
-    // height: 100%;
-    // position: absolute;
-    // background-repeat: no-repeat;
-    // top: 0;
-    // left: 425;
-
-    // @include small {
-    //     max-width: 100px;
-    //     max-height: 100px; 
-    // }
-
-
-    // @include large {
-    //     max-width:  100px;
-    //     max-height: 100px;
-    // }  
 }
 
 .logo-div img {
@@ -61,8 +31,7 @@
         height: 284px;
         top: -88px;
         left: 341px;
-    }
-    
+    }   
     
     position: absolute;
     background-repeat: no-repeat;
@@ -76,7 +45,7 @@
     @include small {
         width: 201px;
         height: 311px;
-        top: 174px;
+        top: 150px;
         left: 348px;   
     }
     position: absolute;
@@ -97,6 +66,21 @@
     position: absolute;
     background-repeat: no-repeat;
 
+}
+
+.player2-legend{
+    z-index: 1;
+    content: "";
+    @include small {
+        width: 114px;
+        height: 321px;
+        top: 466px;
+        left: 452px;
+    }
+
+    position: absolute;
+    background-repeat: no-repeat;
+    font-family: adihausdin_cn;
 }
 
 .filter-orange{
@@ -146,12 +130,86 @@
     @include small {
         width: 201px;
         height: 278px;
-        top: 355px;
+        top: 325px;
         left: 201px;  
     }
     position: absolute;
     background-repeat: no-repeat;
  
+}
+
+.second-paragraph {
+    z-index: 2;
+    content: "";
+
+    @include small {
+        width: 139px;
+        height: 420px;
+        top: 610px;
+        left: 204px;
+        
+    }
+    position: absolute;
+    background-repeat: no-repeat;
+    
+}
+
+.subtitle {
+    color: #db8f59;
+    font-family: adineuepro;
+    font-size: 18px;
+}
+
+.subparagrph {
+    color: #404040;
+    font-family: adihausdin_cn;
+    font-size: 11px;
+}
+
+.guayos-2 img{  
+    
+    z-index: 1;
+    content: "";
+    @include small {
+        width: 170px;
+        height: 122px;
+        top: 781px;
+        left: 204px;
+    }
+    position: absolute;
+    background-repeat: no-repeat;
+ 
+}
+
+.player-2 img{  
+    
+    z-index: 1;
+    content: "";
+    @include small {
+        width: 190px;
+        height: 121px;
+        top: 681px;
+        left: 360px;
+    }
+    position: absolute;
+    background-repeat: no-repeat;
+ 
+}
+
+.final-title{
+    z-index: 1;
+    content: "";
+    @include small {
+    width: 175px;
+    height: 105px;
+    top: 932px;
+    left: 308px;
+    }
+    position: absolute;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-family: adineuepro;
+    font-size: 18px;
 }
 
 
@@ -209,7 +267,7 @@
 
     @include large {
         max-width:  750px;
-        max-height: 900px;
+        max-height: 1200px;
     }
 }
 
