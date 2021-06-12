@@ -1,0 +1,197 @@
+@import "screen-size";
+@import "fonts";
+@import "_colors";
+@import "util";
+@import "animations";
+
+
+.wrapper {
+    @include small {
+        @include wrap(970px, 400px, 1px solid #9c611e, auto, 0px, auto);
+    }
+
+    @include large {
+        @include wrap(1400px, 1000px, 1px solid #9c611e, auto, 0px, auto);
+    }
+}
+
+.background-div img {
+    z-index: -2;
+
+    @include small {
+        width: 400px;
+        height: 580px;
+    }
+
+    @include large {
+        width: 1000px;
+        height: 790px;
+    }
+}
+
+.logo-div img {
+    @include small {
+        @include component(54px, 284px, -88px, 180px);
+    }
+
+    @include large {
+        @include component(148px, 305px, -71px, 408px);
+    }
+}
+
+.player2 img {
+    @include small {
+        @include component(201px, 311px, 150px, 190px);
+    }
+
+    @include large {
+        @include component(304px, 448px, 180px, 673px);
+    }
+}
+
+.nemesis-icon img {
+    @include small {
+        @include component(88px, 321px, -53px, 20px);
+    }
+
+    @include large {
+        @include component(214px, 346px, -9px, 42px);
+    }
+}
+
+.player2-legend {
+    @include small {
+        @include component(114px, 321px, 466px, 275px);
+        @include font(adihausdin_cn, '', 000000, 1);
+    }
+
+    @include large {
+        @include component(237px, 328px, 639px, 760px);
+        @include font(adihausdin_cn, 36px, 000000, 1);
+    }
+}
+
+.first-title {
+    @include small {
+        @include component(120px, 402px, 120px, 30px);
+        @include font(adineuepro, 37px, $color-title, 28px);
+    }
+
+    @include large {
+        @include component(242px, 418px, 191px, 63px);
+        @include font(adineuepro, 59px, $color-title, 54px);
+    }
+}
+
+.first-desc {
+    @include small {
+        @include component(93px, 359px, 188px, 30px);
+        @include font(adihausdin_cn, 10px, $color-subtitle, px);
+    }
+
+    @include large {
+        @include component(267px, 267px, 324px, 63px);
+        @include font(adihausdin_cn, 20px, $color-subtitle, px);
+    }
+}
+
+.guayo img {
+    @include small {
+        @include component(201px, 278px, 325px, 35px);
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+    }
+
+    @include large {
+        @include component(325px, 348px, 494px, 63px);
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+    }
+}
+
+.linea1 img {
+    @include lineAnim();
+    @include small {
+        @include component(89px, 278px, 439px, 135px);
+        -webkit-animation: moverL 2s infinite alternate;
+        animation: moverL 2s infinite alternate;
+    }
+
+    @include large {
+        @include component(89px, 278px, 660px, 215px);
+        -webkit-animation: moverL 2s infinite alternate;
+        animation: moverL 2s infinite alternate;
+    }
+}
+
+
+.second-paragraph {
+    @include small {
+        @include component(139px, 420px, 610px, 35px);
+    }
+
+    @include large {
+        @include component(139px, 420px, 830px, 63px);
+    }
+}
+
+.subtitle {
+    @include small {
+        @include font(adineuepro, 18px, $color-title, px);
+    }
+
+    @include large {
+        @include font(adineuepro, 25px, $color-title, px);
+    }
+}
+
+.subparagrph {
+
+    @include small {
+        @include font(adihausdin_cn, 11px, $color-subtitle, px);
+    }
+
+    @include large {
+        @include font(adihausdin_cn, 19px, $color-subtitle, px);
+    }
+}
+
+.guayos-2 img {
+    @include jumpElement();
+
+    @include small {
+        @include component(170px, 122px, 781px, 35px);
+
+    }
+
+    @include large {
+        @include component(320px, 218px, 1100px, 63px);
+    }
+}
+
+.player-2 img {
+    @include small {
+        @include component(190px, 121px, 681px, 200px);
+    }
+
+    @include large {
+        @include component(320px, 218px, 950px, 370px);
+    }
+}
+
+.final-title {
+    @include small {
+        @include component(175px, 105px, 932px, 170px);
+        @include font(adineuepro, 18px, $color-final, px);
+    }
+
+    @include large {
+        @include component(175px, 370px, 1331px, 370px);
+        @include font(adineuepro, 50px, $color-final, px);
+    }
+}
+
+
+.filter-orange {
+    filter: invert(48%) sepia(79%) saturate(2476%) brightness(118%) contrast(119%);
+}
