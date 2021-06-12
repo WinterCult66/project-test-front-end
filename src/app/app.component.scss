@@ -5,81 +5,78 @@
 
 
 .wrapper {
-    height: 970px;
-    width: 400px;
-    border: 1px solid #9c611e;
-    margin: auto;
-    margin-left: 160px;
-    margin-right: auto;
+    @include wrap(970px, 400px, 1px solid #9c611e, auto, 160px, auto);
 }
 
-.background-div img{   
-
+.background-div img {
     z-index: -2;
+
     @include small {
         width: 400px;
-        height: 580px;        
+        height: 580px;
     }
-    
 }
 
 .logo-div img {
-    @include component(54px,284px,-88px,341px);
+    @include component(54px, 284px, -88px, 341px);
 }
 
-.player2 img{      
-    @include component(201px,311px,150px,348px);
+.player2 img {
+    @include component(201px, 311px, 150px, 348px);
 }
 
 .nemesis-icon img {
-    @include component(88px,321px,-53px,188px);
+    @include component(88px, 321px, -53px, 188px);
 }
 
-.player2-legend{
-    @include component(114px,321px,466px,452px);    
-    @include font(adihausdin_cn,'',000000,1);
+.player2-legend {
+    @include component(114px, 321px, 466px, 452px);
+    @include font(adihausdin_cn, '', 000000, 1);
 }
 
 .first-title {
-    @include component(120px,402px,120px,204px);
-    @include font(adineuepro,37px,$color-title,28px);
+    @include component(120px, 402px, 120px, 204px);
+    @include font(adineuepro, 37px, $color-title, 28px);
 }
 
 .first-desc {
-    @include component(93px,359px,188px,204px);
-    @include font(adihausdin_cn,10px,$color-subtitle,px);
+    @include component(93px, 359px, 188px, 204px);
+    @include font(adihausdin_cn, 10px, $color-subtitle, px);
 }
 
-.guayo img{  
-    @include component(201px,278px,325px,201px);     
+.guayo img {
+    @include component(201px, 278px, 325px, 201px);
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
 }
 
 .second-paragraph {
-    @include component(139px,420px,610px,204px);         
+    @include component(139px, 420px, 610px, 204px);
 }
 
 .subtitle {
-    @include font(adineuepro,18px,$color-title,px);
+    @include font(adineuepro, 18px, $color-title, px);
 }
 
 .subparagrph {
-    @include font(adihausdin_cn,11px,$color-subtitle,px);
+    @include font(adihausdin_cn, 11px, $color-subtitle, px);
 }
 
-.guayos-2 img{  
-    @include component(170px,122px,781px,204px);          
+.guayos-2 img {
+    @include component(170px, 122px, 781px, 204px);
+    @include jumpElement();
 }
 
-.player-2 img{  
-    @include component(190px,121px,681px,367px);           
+.player-2 img {
+    @include component(190px, 121px, 681px, 367px);
 }
 
-.final-title{
-    @include component(175px,105px,932px,308px);           
-    @include font(adineuepro,18px,$color-final,px);
+.final-title {
+    @include component(175px, 105px, 932px, 308px);
+    @include font(adineuepro, 18px, $color-final, px);
 }
 
 
-.filter-orange{
+.filter-orange {
     filter: invert(48%) sepia(79%) saturate(2476%) brightness(118%) contrast(119%);
 }

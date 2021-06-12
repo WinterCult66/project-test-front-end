@@ -13,11 +13,31 @@
     background-repeat: no-repeat;
 }
 
-@mixin font($font, $size , $color,$lineH){
+@mixin font($font, $size, $color, $lineH) {
     font-family: $font;
     font-size: $size;
     color: $color;
     line-height: $lineH;
+}
+
+@mixin wrap ($height, $width, $border, $margin, $margin-l, $margin-r) {
+    height: $height;
+    width: $width;
+    border: $border;
+    margin: $margin;
+    margin-left: $margin-l;
+    margin-right: $margin-r;
+}
+
+@mixin jumpElement{
 
 
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
 }
