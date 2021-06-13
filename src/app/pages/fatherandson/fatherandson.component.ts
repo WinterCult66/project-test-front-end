@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FatherandsonComponent implements OnInit {
 
-  dataList3: Array<{ key }> = [{key:" 4"},{key:"  4"},{key:"   4"},{key:"    4"},{key:" 4"}];
+  dataList3: Array<{ key }> = [{ key: " 4" }, { key: "  4" }, { key: "   4" }, { key: "    4" }, { key: " 4" }];
   dataList: Array<{ key: number, value: number }> = [];
   dataList2: Array<{}> = Array(17).fill(0);
   atLeast = false;
-  countGlobal = 0;
+  isReady = false;
+  disp = "none";
+
   constructor() {
     this.dataList.push({ key: 2, value: 8 });
     this.dataList.push({ key: 3, value: 4 });
@@ -46,41 +48,44 @@ export class FatherandsonComponent implements OnInit {
 
     for (let index = 0; index < countData[0]; index++) {
       if (index == 0) {
-        this.dataList2.splice(0, 0, { val: this.dataList[index].key, style: "", position: "margin-left: 80px;" });
+        this.dataList2.splice(0, 0, { val: this.dataList[index].key, style: "is0" });
       } else if (countData[0] - 1 == index) {
-        this.dataList2[this.dataList.length - 1] = { val: this.dataList[index].key, style: "" };
+        this.dataList2[this.dataList.length - 1] = { val: this.dataList[index].key, style: "is0" };
       } else {
-        this.dataList2[space * index] = { val: this.dataList[index].key, style: "" };
+        this.dataList2[space * index] = { val: this.dataList[index].key, style: "is0" };
       }
     }
 
     this.dataList.forEach(element => {
       let count = 0;
       if (element.value != 0) {
-        
+
         for (let index = 0; index < this.dataList2.length; index++) {
-          if (this.dataList2[index] == 0) {   
-            console.log("no es un cero")         
-            this.dataList2[index] = { val: element.key, style: "sin bola" };
+          if (this.dataList2[index] == 0) {
+            this.dataList2[index] = { val: element.key, style: "0" };
             break;
           }
         }
       } else {
-        console.log("es un cero")
+
       }
-    });  
-    
+    });
+
     let count = 0;
 
 
-    this.dataList2.forEach(e=>{        
-        if (e["style"]==""){
-          count = 0;          
-        }else {
-          count = count+1;
-          e["val"] = this.fillSpace(e["val"],count);
-        }
+    this.dataList2.forEach(e => {
+
+      if (e["style"] == "is0") {
+        count = 0;
+        e["style"] = "0px";
+      } else {
+        count = count + 1;
+        e["style"] = this.fillSpace(count);
+      }
     })
+
+    this.getData();
 
   }
 
@@ -88,18 +93,10 @@ export class FatherandsonComponent implements OnInit {
     this.dataList2.push({ val: value, style: style });
   }
 
-  fillSpace (val,count){
-    var space = "";
-    for (let index = 0; index < count; index++) {
-      
-      space = space+ "-";
-
-    }
-
-    val = space+ val;
-
-    return val;
-
+  fillSpace(count) {
+    var space = count * 5;
+    console.log(space)
+    return space + "px";
   }
 
 
@@ -117,10 +114,16 @@ export class FatherandsonComponent implements OnInit {
 
   }
 
-  getData(){
-    this.dataList2.forEach(element => {
-      console.log(element["val"])
-    });
+  getData() {
+      setTimeout(() => {
+        var lis = document.getElementsByName("lis");
+        lis.forEach(e => {
+          e.style.marginLeft = e["id"];
+        });
+        this.disp = "block";
+      }, 500);
+
+      
   }
 
 }

@@ -1,29 +1,9 @@
-<!-- <div>
-
-    <ul style="list-style-type:circle">
-        <div *ngFor="let item of dataList2">
-
-
-            <li>
-                {{item.val}}
-            </li>
-        </div>
-    </ul>
-</div>
-
-<button (click)="getData()">
-    asssssssssssssssss
-</button>
-
-<div *ngFor="let item of dataList3">
-    {{item.key}}
-</div> -->
-<div>
+<div [ngStyle]="{'display': disp}">
     <ul>
         <div *ngFor="let item of dataList2">
-            <div >
+            <div name="lis" [id]="item.style">
                 <li>
-                    {{item.val}} {{item.position}}
+                    {{item.val}}
                 </li>
             </div>
         </div>
