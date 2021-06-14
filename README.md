@@ -1,5 +1,11 @@
 # Instrucciones Para Ejecutar la prueba localmente.
 
+## Requisitos
+
+Tener instalado Node JS: https://nodejs.org/es/download/ 
+Tener instalado GIT: https://git-scm.com/download/
+
+
 ## Clonar La Prueba
 
 Para bajar el repo, debe abrir un CMD configurado con Git y debe ejcutar el comando: `git clone https://github.com/WinterCult66/project-test-front-end.git`
