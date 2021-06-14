@@ -4,6 +4,7 @@ import { environment } from "../../environments/environment";
 import { CommonHttpClient } from '../model/CommonHttpClient';
 
 import 'rxjs/Rx';
+import 'rxjs/add/operator/map';
 
 @Injectable({
   providedIn: 'root'
