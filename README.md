@@ -2,8 +2,9 @@
 
 ## Requisitos
 
-Tener instalado Node JS: https://nodejs.org/es/download/ 
-Tener instalado GIT: https://git-scm.com/download/
+Tener instalado:
+Node JS: https://nodejs.org/es/download/ 
+GIT: https://git-scm.com/download/
 
 
 ## Clonar La Prueba
