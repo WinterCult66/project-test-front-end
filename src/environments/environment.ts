@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlApi: "",
+  urlApi: "https://aqueous-bayou-93928.herokuapp.com",
+  urlSpootifyApi: "https://api.spotify.com/v1/",
 };
 
 /*

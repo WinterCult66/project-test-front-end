@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <h1 class="h1-1">Busca Tu artista!</h1>
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div class="container">
+    <div class="Hotbg">
+        <input #artist type="text" name="" (keyup)="searchArtist(artist.value)" class="Hotbg-txt"
+            placeholder="Buscar Artista">
+        <a href="#" class="Hotbg-btn">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <main class="grid">
+        <article *ngFor="let artist of artists">
+            <div  *ngIf="(artist.images.length>0 && artist.images[0].url != undefined) else noPhoto">
+                <img  [src]="artist.images[0].url" alt="tshirt photo">   
+            </div>
+
+            <ng-template #noPhoto>
+                <img  [src]="noImage" alt="tshirt photo">   
+            </ng-template>
+            
+
+            <div class="text">
+                <h3>{{artist.name}}</h3>                
+                <p>Generos: <b class="cursiveLetter">{{artist.genres}}</b></p>
+                <p>Seguidores: {{artist.followers.total| number}}</p>
+            </div>
+        </article>
+    </main>
+</div>

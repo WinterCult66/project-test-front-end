@@ -16,7 +16,7 @@ export const ROUTES: Routes = [
 
     { path: 'home', component: HomeComponent },
     { path: 'adidas', component: AdidasComponent },
-    { path: 'twitter', component: TwiterComponent },
+    { path: 'spootify', component: TwiterComponent },
     { path: 'father-son', component: FatherandsonComponent, },
 
 

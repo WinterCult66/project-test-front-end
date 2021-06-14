@@ -94,7 +94,7 @@ export class FatherandsonComponent implements OnInit {
   }
 
   fillSpace(count) {
-    var space = count * 5;
+    var space = count * 35;
     console.log(space)
     return space + "px";
   }
