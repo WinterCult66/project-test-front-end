@@ -12,3 +12,9 @@ y ejecutar el comando`npm i`
 ## Correr el Proyecto
 
 Una vez descargue las dependencias ejecutar `ng serve` y buscar en el navegador la URl `http://localhost:4200/`.
+
+## Como interactuar 
+
+Usted vera la siguiente pantalla (En esa pantalla debe elegir la prueba a ver)
+
+![image](https://user-images.githubusercontent.com/29932654/121846591-d979a000-ccac-11eb-9051-a5ecf2d73501.png)
