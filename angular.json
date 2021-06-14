@@ -46,6 +46,10 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/app/shared/fonts.scss",
+                  "with": "src/app/shared/fonts.prod.scss"
                 }
               ],
               "optimization": true,

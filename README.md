@@ -1,27 +1,13 @@
-# ProjectTestFrontEnd
+# Clonar La Prueba
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+Para bajar el repo, debe abrir un CMD configurado con Git y debe ejcutar el comando: `git clone https://github.com/WinterCult66/project-test-front-end.git`
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Bajar las Dependencias
 
-## Code scaffolding
+acceder a la carpeta `cd /project-test-front-end`
+Luego debe bajar las dependencias `npm i`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Correr el Proyecto
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Una vez descargue las dependencias ejecutar `ng serve` y busca en el navegador la URl `http://localhost:4200/`.
