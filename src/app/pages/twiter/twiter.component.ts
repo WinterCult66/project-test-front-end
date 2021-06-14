@@ -12,7 +12,11 @@ export class TwiterComponent implements OnInit {
 
   artists = [];
   noImage = "/assets/images/spootify/noImage.png";
-  constructor(private twitterService: TwitterService, private spootifyService: SpootifyService) { }
+  constructor(private twitterService: TwitterService, private spootifyService: SpootifyService) {
+    if (environment.production == true) {
+      this.noImage = '../project-test-front-end' + this.noImage;
+    }
+  }
 
   ngOnInit(): void {
     this.validationifTheTokenIsValid();
